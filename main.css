@@ -164,6 +164,8 @@ small {
      margin-top: 1rem;
      position: relative;
      display: flex;
+     max-width: 3rem;
+     border-radius: 2em;
  }
 
  .toggle + label::before {
@@ -221,11 +223,14 @@ small {
 }
 
 .lab {
-    height: 30px;
+    /* height: 30px; */
     margin-top: 1rem;
     position: relative;
     display: flex;
     align-items: center;
+    max-width: 2.7rem;
+    max-height: 30px;
+    border-radius: 2em;
 }
 
 .togg + .lab::before {
@@ -244,15 +249,14 @@ small {
    height: 1.2em;
    border-radius: 50;
    border-radius: 1em;
-   top: .34em;
-   left: .35rem;
+   left: .3em;
    transform: rotateZ(-55deg);
    background-color: var(--yellow-clr);
    transform: 45s;
 }
 
 .togg:checked + .lab::after {
-    left: 1.19em;
+    left: 1.2em;
     transform: rotateZ(55deg);
 }
   /*-----------------*/
