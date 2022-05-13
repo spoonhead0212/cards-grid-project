@@ -1,8 +1,8 @@
 :root {
-    --font: 'Varela Round', sans-serif;
+    --font: 'Abril Fatface', cursive;
     --font-weight-thicker: 900;
-    --line-height: 1.4rem
-    --font-thick: 600;
+    --line-height: 1.4rem;
+    --font-thick: 400;
     --black-clr: #000000;
     --yellow-clr: #fca311;
     --almost-wine-clr: #fb5607;
@@ -20,19 +20,18 @@ body {
     width: 100vw;
     font-family: var(--font);
     background-color: #fefae0;
+    scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;?
-}
+a {text-decoration: none;}
+h4 {font-weight: var(--font-thick);}
+p {font-size: .8em;}
+li {list-style: none;}
 
-h3 {
-    font-weight: var(--font-weight-thicker);
+h3 { font-weight: var(--font-weight-thicker);
     font-size: 2em;
 }
-h4 {
-    font-weight: var(--font-thick);
-}
+
 
 .wrapper {
     width: 90vw;
@@ -81,6 +80,7 @@ small {
     align-items: center;
     align-self: center;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-weight: var(--font-thick);
 }
 
 .griddy {
@@ -188,9 +188,9 @@ small {
     background-color: var(--black-clr);
  }
 
- .toggle:checked + label::before {
-     background-color: white;
- }
+ /*.toggle:checked + label::before {
+     background: white;
+ }*/
 
  .toggle:checked + label::after {
      background-color: var(--black-clr);
@@ -199,6 +199,108 @@ small {
  .toggle:checked + label::after {
      left: 1.62em;
      transform: rotateZ(55deg);
-     transform: translate();
  }
+
+ /*-----------------*/
+ .happy {
+    border: var(--black-clr) 2px solid;
+    color: var(--black-clr);
+}
+
+.happy h3 {
+    margin-bottom: .5rem;
+}
+
+.happy p {
+    line-height: var(--line-height);
+    margin-bottom: .5rem;
+}
+
+ .togg {
+    display: none;
+}
+
+.lab {
+    height: 30px;
+    margin-top: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.togg + .lab::before {
+    content: '';
+    width: 2.7rem;
+    height: .5em;
+    border-radius: 2em;
+    background-color: var(--black-clr);
+    transition: 45s;
+}
+
+.togg + .lab::after {
+   content: '';
+   position: absolute;
+   width: 1.2rem;
+   height: 1.2em;
+   border-radius: 50;
+   border-radius: 1em;
+   top: .34em;
+   left: .35rem;
+   transform: rotateZ(-55deg);
+   background-color: var(--yellow-clr);
+   transform: 45s;
+}
+
+.togg:checked + .lab::after {
+    left: 1.19em;
+    transform: rotateZ(55deg);
+}
+  /*-----------------*/
+
+ .head-tit-div {
+     display: flex;
+     justify-content: space-between;
+     line-height: var(--line-height);
+ }
+
+ .monthly {
+     background: var(--yellow-clr);
+     line-height: 2rem;
+     text-align: center;
+ }
+
+ .femi {
+     display: flex;
+     align-items: center;
+ }
+
+ .femi > img {
+     margin-right: .5rem;
+ }
+
+ .blush {
+     background-color: var(--green-clr);
+     border-radius: .7rem;
+     margin-block: 1rem;
+ }
+
+ .action {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .last-act {
+     justify-self: right;
+ }
+
+ .comm-like {
+     display: flex;
+     align-items: center;
+ }
+
+ .comm-like .sma {
+     margin-right: 1rem;
+ }
+
 
