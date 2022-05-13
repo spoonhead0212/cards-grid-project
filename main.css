@@ -164,8 +164,9 @@ small {
     margin-top: 1rem;
     position: relative;
     display: flex;
-     /*max-width: 3rem;
-     border-radius: 2em;*/
+     max-width: 3rem;
+     border-radius: 2em;
+     background-color: transparent;
  }
 
  .toggle + label::before {
@@ -221,17 +222,6 @@ small {
  .togg {
     display: none;
 }
-
-/*.lab {
-    /* height: 30px; /
-    margin-top: 1rem;
-    position: relative;
-    display: flex;
-    align-items: center;
-    max-width: 2.7rem;
-    max-height: 30px;
-    border-radius: 2em;
-}*/
 
 .togg + .lab::before {
     content: '';
