@@ -30,6 +30,8 @@ li {list-style: none;}
 
 h3 { font-weight: var(--font-weight-thicker);
     font-size: 2em;
+    line-height: 2.3rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -56,7 +58,7 @@ h3 { font-weight: var(--font-weight-thicker);
 }
 
 .grid-1 > h3 {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .card_name {
@@ -166,7 +168,6 @@ small {
     display: flex;
      max-width: 3rem;
      border-radius: 2em;
-     outline: none;
  }
 
  .toggle + label::before {
@@ -261,8 +262,11 @@ small {
 
  .monthly {
      background: var(--yellow-clr);
-     line-height: 2rem;
      text-align: center;
+ }
+
+ .monthly h2 {
+     font-size: 3.5em;
  }
 
  .femi {
@@ -277,6 +281,7 @@ small {
  .blush {
      background-color: var(--green-clr);
      border-radius: .7rem;
+     padding: .7em ;
      margin-block: 1rem;
  }
 
@@ -300,29 +305,80 @@ small {
      margin-right: 1rem;
  }
 
+ .roma {
+     background-color: var(--almost-wine-clr);
+ }
 
- .css-button-3d--black {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
+ /*styling the label*/
+.custom-radio-btn {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*label around the radio button*/
+
+.checkmark {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 50%;
+    background-color: rgb(37, 36, 36);
     display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    background: #343a40;
-    box-shadow: 0 5px #212529;
-  }
-  .css-button-3d--black:hover {
-    box-shadow: 0 3px #212529;
-    top: 1px;
-  }
-  .css-button-3d--black:active {
-    box-shadow: 0 0 #212529;
-    top: 5px;
-  }                    
+    display: none;
+}
+/*so u can see the span element and also make it invicible*/
+.radio-check {
+    display: none;
+}
+.radio-check:checked + .checkmark {
+     display: inline-block;
+}
+
+.roma > .custom-radio-btn:nth-child(2) {
+    margin-bottom: 1rem;
+}
+
+.dj-night {
+    border: var(--black-clr) 2px solid;
+    border-radius: .5em;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.dj-night__img {
+    background-color: var(--yellow-clr);
+    padding: .7rem;
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
+}
+
+.card-content-fold {
+    padding-inline: 1em;
+}
+
+.card-content-fold h4 {
+    padding: 1em 0 1em ;
+}
+
+.smally {
+    display: flex;
+    align-items: center;
+}
+
+.content-choices > li:nth-child(1)::before {
+    content: url(images/sun-svgrepo-com.svg);
+    width: 30px;
+    margin-right: .5em;
+}
+
+.content-choices > li:nth-child(2)::before {
+    content: url(images/night-svgrepo-com.svg);
+    width: 30px;
+    margin-right: .5em;
+}
+
+     
 
